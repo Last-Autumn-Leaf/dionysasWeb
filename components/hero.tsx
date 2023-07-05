@@ -1,8 +1,8 @@
 import Image from 'next/image'
-import bgImageWhite from '@/public/images/White/Rectangle 6.png'
-import bgImageBlack from '@/public/images/Black/Rectangle 6.png'
-import Logo from '@/public/images/Logo.svg'
-import coloredBg from '@/public/images/Fond stylé.svg'
+import bgImageWhite from 'public/images/White/Rectangle 6.png'
+import bgImageBlack from 'public/images/Black/Rectangle 6.png'
+import Logo from 'public/images/Logo.svg'
+import coloredBg from 'public/images/Fond stylé.svg'
 
 export default function Hero() {
   

@@ -1,11 +1,11 @@
 'use client'
 import React, { useRef, useState } from 'react';
 import Image from 'next/image';
-import feat1 from '@/public/images/White/image_feature_1.svg';
-import feat2 from '@/public/images/White/image_feature_2.svg';
-import feat3 from '@/public/images/White/image_feature_3.svg';
-import feat4 from '@/public/images/White/image_feature_4.svg';
-import feat5 from '@/public/images/White/image_feature_5.svg';
+import feat1 from 'public/images/White/image_feature_1.svg';
+import feat2 from 'public/images/White/image_feature_2.svg';
+import feat3 from 'public/images/White/image_feature_3.svg';
+import feat4 from 'public/images/White/image_feature_4.svg';
+import feat5 from 'public/images/White/image_feature_5.svg';
 
 const Features = () => {
   const features = [

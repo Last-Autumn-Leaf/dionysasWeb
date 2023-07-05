@@ -1,6 +1,6 @@
 import Image from 'next/image'
-import wavyBuddies from '@/public/images/White/Wavy Buddies Choosing Food.svg'
-import shinyHappyBriefing from '@/public/images/White/Shiny Happy Briefing.svg'
+import wavyBuddies from 'public/images/White/Wavy Buddies Choosing Food.svg'
+import shinyHappyBriefing from 'public/images/White/Shiny Happy Briefing.svg'
 
 export default function DescriptionZigZag() {
   return (
@@ -42,7 +42,7 @@ export default function DescriptionZigZag() {
               {/* Content */}
               <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6" data-aos="fade-left">
                 <div className="md:pl-4 lg:pl-12 xl:pl-16">
-                <h2 className="h2 mb-4">Picture this</h2>
+              
                   <p className="text-xl  mb-4">
                   All your worries about overstaffing, running out of ingredients, and offering an outdated menu become a thing of the past. 
                   With our help, your restaurant will reach new heights of success and customer satisfaction.

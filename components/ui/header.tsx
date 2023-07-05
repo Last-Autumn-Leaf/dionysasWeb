@@ -3,10 +3,10 @@
 import { useState, useEffect } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import Logo from '@/public/images/Logo.svg'
+import Logo from 'public/images/Logo.svg'
 import Dropdown from '@/components/utils/dropdown'
 import MobileMenu from './mobile-menu'
-import bwMode from '@/public/images/White/🦆 icon _sun outline_.svg'
+import bwMode from 'public/images/White/🦆 icon _sun outline_.svg'
 
 export default function Header() {
 
