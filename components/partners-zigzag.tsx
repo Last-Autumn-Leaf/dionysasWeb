@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import bestFriendsImageWhite from 'public/images/white/Family Values Best Friends.svg'
+import bestFriendsImageWhite from "public/images/White/Family Values Best Friends.svg"
 import HandGiveImageWhite from 'public/images/White/Hands Give.svg'
 
 export default function PartnerZigzag() {
