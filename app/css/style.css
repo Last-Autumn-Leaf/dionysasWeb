@@ -16,3 +16,12 @@
     }
 }
 
+@font-face {
+    font-family: "margarine";
+    src: url("/font/Margarine/Margarine-Regular.ttf");
+  }
+
+@font-face {
+font-family: "spline";
+src: url("/font/Spline_Sans_Mono/SplineSansMono-VariableFont_wght.ttf");
+}

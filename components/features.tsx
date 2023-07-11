@@ -37,14 +37,21 @@ const Features = () => {
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6v">
           <div className="pt-12 md:pt-20 ">
             <h2 className="h2 mb-4">Features</h2>
-            <div ref={containerRef}  className="overflow-hidden  flex justify-center space-x-20  -ml-4">
+            <div ref={containerRef}  className="overflow-hidden  flex flex-col md:flex-row md:col justify-center mt-4 md:space-x-20 space-y-10">
               {features.map((feature, index) => {
                 return index<3&&(
-                  <div key={index} className="bg-teal-700 rounded-3xl shadow-mg p-6 px-4">
+                  <div 
+                    key={index} 
+                    className="bg-bluesea shadow-mg p-8 px-4"
+                    style={{borderRadius:'20%'}}
+                    >
                     <div className="w-20 h-20 mx-auto mb-4">
-                      <Image src={features[(index +currentIndex)%features.length].feat} alt={`Feature ${index + 1}`} />
+                      <Image 
+                        src={features[(index +currentIndex)%features.length].feat} 
+                        alt={`Feature ${index + 1}`} 
+                      />
                     </div>
-                    <h3 className="text-lg text-center font-medium mb-2">{features[(index + currentIndex)%features.length].text}</h3>
+                    <h3 className="h3 text-lg text-center text-white font-bold mb-2">{features[(index + currentIndex)%features.length].text}</h3>
                   </div>
                 );
               })}
@@ -85,11 +92,11 @@ const Features = () => {
         </div>
         
         <h2 className="h2 mb-4 ">Pricing</h2>
-        <div className="flex justify-center mt-4 space-x-20">
+        <div className="flex flex-col md:flex-row md:col justify-center mt-4 md:space-x-20 space-y-10">
 
-          <div className='bg-teal-700 text-white rounded-3xl p-16'>
-            <h3 className=' font-bold h3 text-center'>Kickstarter</h3>
-            <h4 className='h4 text-right'>$299</h4>
+          <div className='bg-bluesea text-white rounded-3xl p-16'>
+            <h3 className=' font-bold h3 tracking-wide'>Kickstarter</h3>
+            <h3 className='h3 text-right font-extrabold text-orange'>$299</h3>
             <ul className="h4 list-disc">
               <li> Basic Dashboard</li>
               <li> One Feature</li>
@@ -98,9 +105,9 @@ const Features = () => {
             </ul>
           </div>
 
-          <div className='bg-teal-700 text-white rounded-3xl p-16'>
-            <h3 className=' font-bold h3 text-center'>Pro</h3>
-            <h4 className='h4 text-right'>$599</h4>
+          <div className='bg-bluesea text-white rounded-3xl p-16'>
+            <h3 className=' font-bold h3 tracking-wide'>Pro</h3>
+            <h3 className='h3 text-right font-extrabold text-orange'>$599</h3>
             <ul className="h4 list-disc">
               <li> Customization</li>
               <li> API access</li>
@@ -109,9 +116,9 @@ const Features = () => {
           </div>
         
 
-          <div className='bg-teal-700 text-white rounded-3xl p-16'>
-            <h3 className=' font-bold h3 text-center'>Kickstarter</h3>
-            <h4 className='h4 text-right'>$299</h4>
+          <div className='bg-bluesea text-white rounded-3xl p-16'>
+            <h3 className=' font-bold h3 tracking-wide'>Kickstarter</h3>
+            <h3 className='h3 text-right font-extrabold text-orange'>$299</h3>
             <ul className="h4 list-disc">
               <li> Basic Dashboard</li>
               <li> One Feature</li>

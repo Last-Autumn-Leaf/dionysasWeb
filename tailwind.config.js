@@ -9,6 +9,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        orange:'#E77408',
+        bluesea:'#0F4C5C',
         gray: {
           100: '#FBFBFB',
           200: '#EAEAEA',
@@ -61,7 +63,9 @@ module.exports = {
         '1/1': '100%',
       },
       fontFamily: {
-        inter: ['var(--font-inter)', 'sans-serif'],
+        margarine: ['margarine', 'sans-serif'],
+        spline: ['spline', 'sans-serif'],
+        inter: ['var(--font-inter)', 'sans'],
       },
       fontSize: {
         xs: '0.75rem',
@@ -110,6 +114,7 @@ module.exports = {
       },
       opacity: {
         '90': '0.9',
+        '50':'0.5'
       },
       scale: {
         '98': '.98'

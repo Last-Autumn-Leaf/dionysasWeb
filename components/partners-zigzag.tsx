@@ -25,10 +25,10 @@ export default function PartnerZigzag() {
               {/* Content */}
               <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6" data-aos="fade-right">
                 <div className="md:pr-4 lg:pr-12 xl:pr-16">
-                  <p className="text-xl mb-4">
+                  <p className="p text-xl mb-4">
                   With a team of experts and a track record of success, we’re well on our way to becoming 
                   </p>
-                  <p className="text-xl mb-4">the best friend of restaurants.</p>
+                  <p className="p text-3xl mb-4 text-orange">the best friend of restaurants.</p>
                 </div>
               </div>
             </div>
@@ -42,7 +42,7 @@ export default function PartnerZigzag() {
               {/* Content */}
               <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6" data-aos="fade-left">
                 <div className="md:pl-4 lg:pl-12 xl:pl-16">
-                  <p className="text-xl  mb-4">
+                  <p className="p text-xl  mb-4">
                   More than a service provider, Dionysas is your trusted partner. Our success is based on collaboration and mutual understanding. 
                   When you choose Dionysas, you benefit from our unwavering commitment to propelling your business towards its goals. 
                   We work closely with you, understanding your issues and challenges, to create innovative solutions that generate tangible results. 
