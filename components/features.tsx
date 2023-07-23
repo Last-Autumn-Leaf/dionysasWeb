@@ -27,7 +27,7 @@ const Features = () => {
     setCurrentIndex((prevIndex) => (prevIndex - 1 < 0 ? features.length - 1 : prevIndex - 1));
   };
 
-
+  const NoPricing=false;
 
   return (
     <section className="relative">
@@ -90,43 +90,46 @@ const Features = () => {
             </svg>
           </button>
         </div>
-        
-        <h2 className="h2 mb-4 ">Pricing</h2>
-        <div className="flex flex-col md:flex-row md:col justify-center mt-4 md:space-x-20 space-y-10">
+        {NoPricing&&
+        <div>
+          <h2 className="h2 mb-4 ">Pricing</h2>
+          <div className="flex flex-col md:flex-row md:col justify-center mt-4 md:space-x-20 space-y-10">
 
-          <div className='bg-bluesea text-white rounded-3xl p-16'>
-            <h3 className=' font-bold h3 tracking-wide'>Kickstarter</h3>
-            <h3 className='h3 text-right font-extrabold text-orange'>$299</h3>
-            <ul className="h4 list-disc">
-              <li> Basic Dashboard</li>
-              <li> One Feature</li>
-              <li> Weekly forecast</li>
-              <li> Email support</li>
-            </ul>
-          </div>
+            <div className='bg-bluesea text-white rounded-3xl p-16'>
+              <h3 className=' font-bold h3 tracking-wide'>Kickstarter</h3>
+              <h3 className='h3 text-right font-extrabold text-orange'>$299</h3>
+              <ul className="h4 list-disc">
+                <li> Basic Dashboard</li>
+                <li> One Feature</li>
+                <li> Weekly forecast</li>
+                <li> Email support</li>
+              </ul>
+            </div>
 
-          <div className='bg-bluesea text-white rounded-3xl p-16'>
-            <h3 className=' font-bold h3 tracking-wide'>Pro</h3>
-            <h3 className='h3 text-right font-extrabold text-orange'>$599</h3>
-            <ul className="h4 list-disc">
-              <li> Customization</li>
-              <li> API access</li>
-              <li> 24/7 support</li>
-            </ul>
-          </div>
-        
+            <div className='bg-bluesea text-white rounded-3xl p-16'>
+              <h3 className=' font-bold h3 tracking-wide'>Pro</h3>
+              <h3 className='h3 text-right font-extrabold text-orange'>$599</h3>
+              <ul className="h4 list-disc">
+                <li> Customization</li>
+                <li> API access</li>
+                <li> 24/7 support</li>
+              </ul>
+            </div>
+          
 
-          <div className='bg-bluesea text-white rounded-3xl p-16'>
-            <h3 className=' font-bold h3 tracking-wide'>Kickstarter</h3>
-            <h3 className='h3 text-right font-extrabold text-orange'>$299</h3>
-            <ul className="h4 list-disc">
-              <li> Basic Dashboard</li>
-              <li> One Feature</li>
-              <li> Weekly forecast</li>
-              <li> Email support</li>
-            </ul>
+            <div className='bg-bluesea text-white rounded-3xl p-16'>
+              <h3 className=' font-bold h3 tracking-wide'>Kickstarter</h3>
+              <h3 className='h3 text-right font-extrabold text-orange'>$299</h3>
+              <ul className="h4 list-disc">
+                <li> Basic Dashboard</li>
+                <li> One Feature</li>
+                <li> Weekly forecast</li>
+                <li> Email support</li>
+              </ul>
+            </div>
           </div>
         </div>
+        }
       </div>
     </section>
   );

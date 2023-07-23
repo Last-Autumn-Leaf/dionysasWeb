@@ -10,13 +10,14 @@ import PartnerZigzag from '@/components/partners-zigzag'
 import DescriptionZigZag from '@/components/description-zigzag'
 
 export default function Home() {
+  const noNewsletter=false;
   return (
     <>
       <Hero />
       <DescriptionZigZag/>
       <Features />
       <PartnerZigzag/>
-      <Newsletter />
+      {noNewsletter&&<Newsletter />}
     </>
   )
 }
