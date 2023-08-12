@@ -10,7 +10,7 @@ export default function DescriptionZigZag() {
 
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-4 md:pb-6">
-            <h1 className="h2 ">Effortlessly Boost Your Restaurant’s Efficiency</h1>
+            <h1 className="h2 ">Unlocking Tomorrow's Dining Experience</h1>
           </div>
 
           {/* Items */}
@@ -25,9 +25,10 @@ export default function DescriptionZigZag() {
               {/* Content */}
               <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6" data-aos="fade-right">
                 <div className="md:pr-4 lg:pr-12 xl:pr-16">
+                  <p className='p text-xl mb-4 text-bluesea'>Step into the Future of Dining</p>
                   <p className="p text-xl mb-4">
-                  Our AI-driven platform will become the guardian angel of your restaurant’s operations. By analyzing your historical data, customer feedback,
-                   and market trends, the platform will tell you exactly how to optimize staffing, inventory, and menus for maximum profitability.
+                  Embark on an extraordinary journey with Dionysas, where innovation meets state-of-the-art technology. 
+                  Get ready to transform your restaurant into a captivating hub of experiences that will leave your customers enchanted and craving for more.
                   </p>
                 </div>
               </div>
@@ -45,7 +46,7 @@ export default function DescriptionZigZag() {
                   <h1 className="h2 mb-4">Picture this</h1>
                   <p className="p text-xl  mb-4">
                   All your worries about overstaffing, running out of ingredients, and offering an outdated menu become a thing of the past. 
-                  With our help, your restaurant will reach new heights of success and customer satisfaction.
+                  At Dionysas, we've cracked the code to make your culinary aspirations a reality, from anticipating customer desires to optimizing kitchen efficiency.
                   </p>
                 </div>
               </div>

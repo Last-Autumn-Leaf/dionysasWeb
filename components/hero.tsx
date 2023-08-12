@@ -27,10 +27,7 @@ export default function Hero() {
           className="text-6xl md:text-7xl leading-tighter tracking-tighter mb-4"
           data-aos="zoom-y-out"
         >
-          <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400">
-            Revolutionize
-          </span>{' '}
-          Your
+          Revolutionize Your
         </h1>
         <h1
           className="text-6xl md:text-7xl leading-tighter tracking-tighter mb-4"

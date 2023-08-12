@@ -9,23 +9,18 @@ import feat5 from 'public/images/White/image_feature_5.svg';
 
 const Features = () => {
   const features = [
-    { feat: feat1, text: 'Sales Prediction Models' },
-    { feat: feat2, text: 'AI-Driven Staff Scheduling' },
-    { feat: feat3, text: 'Customer Review Analysis' },
-    { feat: feat4, text: 'Inventory Management' },
-    { feat: feat5, text: 'Customer Review Analysis' },
+    { feat: feat1, text: 'AI-Powered Sales Forecasting',
+      desc:"Our AI-driven Sales Forecasting tool provides accurate predictions based on data analysis,\n ensuring optimal inventory management and higher profitability" },
+    { feat: feat4, text: 'Smart Inventory Management',
+      desc:'Our Smart Inventory Management solution uses AI to monitor inventory in real-time,\n reducing waste and boosting cost efficiency for increased profits' },
+    { feat: feat3, text: 'Personalized Customer Experience',
+      desc:'Elevate customer satisfaction with our AI-driven Customer Experience tool,\n offering tailored recommendations and enhancing overall dining enjoyment' },
+    { feat: feat2, text: 'Efficient Staff Management',
+      desc:'Enhance operational efficiency with our Efficient Staff Management tool,\n optimizing shifts and skills for exceptional service and customer satisfaction' },
   ];
 
   const containerRef = useRef(null);
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  const handleNext = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1 >= features.length ? 0 : prevIndex + 1));
-  };
-
-  const handlePrev = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 < 0 ? features.length - 1 : prevIndex - 1));
-  };
+ 
 
   const NoPricing=false;
 
@@ -37,59 +32,39 @@ const Features = () => {
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6v">
           <div className="pt-12 md:pt-20 ">
             <h2 className="h2 mb-4">Features</h2>
-            <div ref={containerRef}  className="overflow-hidden  flex flex-col md:flex-row md:col justify-center mt-4 md:space-x-20 space-y-10">
+            <div ref={containerRef}  className="flex flex-wrap justify-center mt-4 mb-4">
               {features.map((feature, index) => {
-                return index<3&&(
-                  <div 
-                    key={index} 
-                    className="bg-bluesea shadow-mg p-8 px-4"
-                    style={{borderRadius:'20%'}}
-                    >
-                    <div className="w-20 h-20 mx-auto mb-4">
-                      <Image 
-                        src={features[(index +currentIndex)%features.length].feat} 
-                        alt={`Feature ${index + 1}`} 
-                      />
+                return (
+                  <div className="group relative m-12 flex justify-center">
+                    <div 
+                      key={index} 
+                      className="bg-bluesea p-8 m-4 "
+                      style={{borderRadius:'60%',
+                      minWidth:'260px',
+                      minHeight:'260px',
+                      maxWidth:'260px',
+                      maxHeight:'260px'}}
+                      >
+                      <div className="w-20 h-20 mx-auto mb-4">
+                        <Image 
+                          src={feature.feat} 
+                          alt={`Feature ${index + 1}`} 
+                        />
+                      </div>
+                      <h3 className="h3 text-lg text-center text-white font-bold mb-2">{feature.text}</h3>
                     </div>
-                    <h3 className="h3 text-lg text-center text-white font-bold mb-2">{features[(index + currentIndex)%features.length].text}</h3>
+                    <span className="absolute  top-10 scale-0 transition-all rounded bg-gray-800 p-2 text-lg text-white group-hover:scale-100">✨ {feature.desc}</span>
                   </div>
                 );
               })}
 
             </div>
           </div>
-        <div className="flex justify-center mt-4">
-          <button
-            className="text-gray-500 hover:text-gray-700 transition-colors duration-300"
-            onClick={handlePrev}
-            aria-label="Previous"
-          >
-            <svg
-              className="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7" />
-            </svg>
-          </button>
-          <button
-            className="text-gray-500 hover:text-gray-700 transition-colors duration-300"
-            onClick={handleNext}
-            aria-label="Next"
-          >
-            <svg
-              className="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
-            </svg>
-          </button>
-        </div>
+        
+          <div className="relative">
+
+</div>
+
         {NoPricing&&
         <div>
           <h2 className="h2 mb-4 ">Pricing</h2>

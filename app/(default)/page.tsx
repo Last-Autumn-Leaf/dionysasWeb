@@ -10,7 +10,7 @@ import PartnerZigzag from '@/components/partners-zigzag'
 import DescriptionZigZag from '@/components/description-zigzag'
 
 export default function Home() {
-  const noNewsletter=false;
+  const noNewsletter=true;
   return (
     <>
       <Hero />
