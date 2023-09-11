@@ -24,7 +24,7 @@ export default function RootLayout({
   const noHeader=false;
   const noBanner=false;
   return (
-    <html lang="en">
+    <html lang="en" style={{scrollBehavior:'smooth',fontSmooth: 'always'}}>
       <body className={`${inter.variable} font-inter antialiased bg-white text-gray-900 tracking-tight`}>
         <div className="flex flex-col min-h-screen overflow-hidden supports-[overflow:clip]:overflow-clip">
         {noHeader&&<Header />}

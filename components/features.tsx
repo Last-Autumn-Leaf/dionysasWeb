@@ -31,7 +31,7 @@ const Features = () => {
 
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6v">
           <div className="pt-12 md:pt-20 ">
-            <h2 className="h2 mb-4">Features</h2>
+            <h2 className="h2 mb-4">Features in development</h2>
             <div ref={containerRef}  className="flex flex-wrap justify-center mt-4 mb-4">
               {features.map((feature, index) => {
                 return (

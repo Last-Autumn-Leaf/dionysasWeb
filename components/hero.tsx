@@ -36,15 +36,18 @@ export default function Hero() {
           Restaurant with AI
         </h1>
 
-        <button
-          className="text-white py-2 px-4 rounded bg-orange shadow-md "
-          style={{
-            borderRadius: '12px',
-            boxShadow: '0 1px 4px rgba(0, 0, 0, 0.25)',
-          }}
-        >
-          Join the revolution
-        </button>
+        <a href="#newsletter">
+          <button
+            className="text-white py-2 px-4 rounded bg-orange shadow-md"
+            style={{
+              borderRadius: '12px',
+              boxShadow: '0 1px 4px rgba(0, 0, 0, 0.25)',
+            }}
+          >
+            Join the revolution
+          </button>
+        </a>
+
       </div>
     </section>
   );
