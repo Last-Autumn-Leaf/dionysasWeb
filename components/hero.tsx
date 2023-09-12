@@ -38,7 +38,7 @@ export default function Hero() {
 
         <a href="#newsletter">
           <button
-            className="text-white py-2 px-4 rounded bg-orange shadow-md"
+            className="text-white py-2 px-4 rounded bg-orange-500 hover:bg-orange-300 shadow-md"
             style={{
               borderRadius: '12px',
               boxShadow: '0 1px 4px rgba(0, 0, 0, 0.25)',

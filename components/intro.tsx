@@ -84,7 +84,7 @@ export default function Introduction() {
                         <div key={index} className='md:grid md:grid-cols-3 md:gap-y-4 justify-center items-center mb-4'>
                             <div className='flex justify-center'>
                                 <button
-                                    className="text-white text-xl font-bold py-2 px-2 rounded-full bg-orange shadow-md text-center"
+                                    className="text-white text-xl font-bold py-2 px-2 rounded-full bg-orange-500 shadow-md text-center"
                                     style={{
                                         boxShadow: '0 1px 4px rgba(0, 0, 0, 0.25)',
                                         maxWidth: 275,
@@ -131,7 +131,7 @@ export default function Introduction() {
                 <div className='flex justify-center'>
                     <a href='https://guggfn2clt9.typeform.com/to/GMyBNj1p' target="_blank" rel="noopener noreferrer">
                         <button
-                            className="text-white text-base md:text-xl font-bold py-2 px-2 rounded-xl bg-orange shadow-md text-center"
+                            className="text-white text-base md:text-xl font-bold py-2 px-2 rounded-xl bg-orange-500 hover:bg-orange-300 shadow-md text-center"
                             style={{
                                 boxShadow: '0 1px 4px rgba(0, 0, 0, 0.25)',
                                 minWidth: 250,

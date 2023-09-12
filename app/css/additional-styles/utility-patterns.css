@@ -4,7 +4,7 @@
   }
   
   .h2 {
-    @apply text-3xl font-normal leading-tight tracking-tighter text-orange font-margarine;
+    @apply text-3xl font-normal leading-tight tracking-tighter text-orange-500 font-margarine;
   }
   
   .h3 {
