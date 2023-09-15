@@ -35,9 +35,8 @@ const Features = () => {
             <div ref={containerRef}  className="flex flex-wrap justify-center mt-4 mb-4">
               {features.map((feature, index) => {
                 return (
-                  <div className="group relative m-12 flex justify-center">
+                  <div key={index}  className="group relative m-12 flex justify-center">
                     <div 
-                      key={index} 
                       className="bg-bluesea p-8 m-4 "
                       style={{borderRadius:'60%',
                       minWidth:'260px',

@@ -2,26 +2,7 @@ import Image from 'next/image'
 import stuckAtHome from 'public/images/White/Stuck at Home Brainstorming.svg'
 import yuppiesManaging from 'public/images/White/Yuppies Managing.svg'
 
-interface CustomButtonProps {
-    buttonText: string;
-  }
-const CustomButton: React.FC<CustomButtonProps> = ({ buttonText }) => {
-    return (
-        <div className='flex justify-center'>
-            <button
-                className="text-white text-xl font-bold py-2 px-2 rounded-full bg-orange shadow-md text-center "
-                style={{
-                boxShadow: '0 1px 4px rgba(0, 0, 0, 0.25)',
-                maxWidth: 275,
-                minWidth: 250,
-                minHeight:75
-                }}
-            >
-                {buttonText}
-            </button>
-        </div>
-    );
-  };
+
 
   const methodology = [
     {
@@ -59,11 +40,11 @@ export default function Introduction() {
                 {/* 1st item */}
                 <div className="md:grid md:grid-cols-12 md:gap-6 items-center">
                     {/* Image */}
-                    <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 md:mb-0 md:order-0" data-aos="fade-up">
-                        <Image  className="max-w-full mx-auto md:max-w-none h-auto" src={stuckAtHome} width={540} height={405}  alt={"brainstorming"} />
+                    <div className="max-w-xl md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 md:mb-0" data-aos="fade-up">
+                        <Image  className="max-w-full mx-auto h-auto" src={stuckAtHome} width={540} height={405}  alt={"brainstorming"} />
                     </div>
                     {/* Content */}
-                    <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6" data-aos="fade-right">
+                    <div className="max-w-xl md:w-full mx-auto md:col-span-7 lg:col-span-6" data-aos="fade-right">
                         <div className="md:pr-4 lg:pr-12 xl:pr-16">
                             <p className='p text-xl mb-4 text-bluesea'>
                                 Empower Your Restaurant Business with Data Science and AI
@@ -82,7 +63,7 @@ export default function Introduction() {
 
                     {methodology.map((item, index) => (
                         <div key={index} className='md:grid md:grid-cols-3 md:gap-y-4 justify-center items-center mb-4'>
-                            <div className='flex justify-center'>
+                            <div className='flex justify-center mb-4'>
                                 <button
                                     className="text-white text-xl font-bold py-2 px-2 rounded-full bg-orange-500 shadow-md text-center"
                                     style={{
@@ -104,17 +85,13 @@ export default function Introduction() {
                     ))}
 
 
-
-
-
-            
                 {/* 2nd item */}
                 <div className="md:grid md:grid-cols-12 md:gap-6 items-center">
                     {/* Content */}
-                    <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6" data-aos="fade-left">
+                    <div className="max-w-xl md:w-full mx-auto md:col-span-7 lg:col-span-6 mb-4" data-aos="fade-left">
                         <div className="md:pl-4 lg:pl-12 xl:pl-16">
                             <h1 className="h2 mb-4">Why PEARL ?</h1>
-                            <ul className="p text-l  mb-4 list-disc">
+                            <ul className="p text-l  mb-2 list-disc ml-4">
                                 <li>Industry Expertise: Our background in serving, kitchen operations, and restaurant management enables us to understand your business intimately.</li>
                                 <li>State-of-the-Art AI Tools: From sentiment analysis of customer reviews to real-time inventory management, we offer cutting-edge solutions.</li>
                                 <li>Customization: We know each restaurant is unique. That's why our F.A.R. Program is customized to meet the specific needs of your establishment.</li>
@@ -123,12 +100,12 @@ export default function Introduction() {
                         </div>
                     </div>
                     {/* Image */}
-                    <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 md:mb-0 rtl" data-aos="fade-up">
-                        <Image  className="max-w-full mx-auto md:max-w-none h-auto" src={yuppiesManaging} width={540} height={405}  alt={"managing"} />
+                    <div className="max-w-xl md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 md:mb-0 rtl" data-aos="fade-up">
+                        <Image  className="max-w-full mx-auto h-auto" src={yuppiesManaging} width={540} height={405}  alt={"managing"} />
                     </div>
                 </div>
 
-                <div className='flex justify-center'>
+                <div className='flex justify-center mb-4'>
                     <a href='https://guggfn2clt9.typeform.com/to/GMyBNj1p' target="_blank" rel="noopener noreferrer">
                         <button
                             className="text-white text-base md:text-xl font-bold py-2 px-2 rounded-xl bg-orange-500 hover:bg-orange-300 shadow-md text-center"
