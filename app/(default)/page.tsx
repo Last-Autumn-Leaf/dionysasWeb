@@ -19,9 +19,8 @@ export default function Home() {
     <>
       <Hero />
       <DescriptionZigZag/>
-      <Introduction/>
       <Features />
-      <PartnerZigzag/>
+      <Introduction/>
       {noNewsletter&&<Newsletter />}
     </>
   )
