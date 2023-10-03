@@ -6,7 +6,7 @@ export const metadata = {
   import Link from 'next/link'
 import Infos from './components/infos';
 
-  export default function perProgram() {
+  export default function pearlProgram() {
     return (
         <>
         

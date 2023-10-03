@@ -4,7 +4,7 @@ export const metadata = {
   }
   
   import Link from 'next/link'
-import PartnerZigzag from '../(default)/components/partners-zigzag'
+import PartnerZigzag from './partners-zigzag'
 
   export default function AboutUs() {
     return (
