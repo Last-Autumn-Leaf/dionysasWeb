@@ -3,7 +3,6 @@ import flavicon from 'public/favicon.ico'
 import Hero from './components/hero'
 import Features from './components/features'
 import Newsletter from './components/newsletter'
-import PartnerZigzag from './components/partners-zigzag'
 import Introduction from './components/intro'
 
 export const metadata = {
@@ -19,9 +18,8 @@ export default function Home() {
     <>
       <Hero />
       <DescriptionZigZag/>
-      <Introduction/>
       <Features />
-      <PartnerZigzag/>
+      <Introduction/>
       {noNewsletter&&<Newsletter />}
     </>
   )

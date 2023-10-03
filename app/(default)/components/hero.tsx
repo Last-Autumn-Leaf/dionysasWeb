@@ -26,19 +26,20 @@ export default function Hero() {
           className="mx-auto pointer-events-none"
           aria-hidden="true"
         />
+        
         <h1
-          className="text-4xl md:text-7xl leading-tighter tracking-tighter mb-4"
+          className="text-4xl text-sky-900 md:text-7xl leading-tighter tracking-tighter mb-4"
           data-aos="zoom-y-out"
         >
-          Revolutionize Your
+          innovate, impact, inspire:
         </h1>
         <h1
           className="text-4xl md:text-7xl leading-tighter tracking-tighter mb-4"
           data-aos="zoom-y-out"
         >
-          Restaurant with AI
+          Your Restaurant's Journey with AI
         </h1>
-
+        <div className='flex justify-evenly w-1/3'>
         <a href="#newsletter">
           <button
             className="text-white py-2 px-4 rounded bg-orange-500 hover:bg-orange-300 shadow-md"
@@ -50,6 +51,17 @@ export default function Hero() {
             Join the revolution
           </button>
         </a>
+        <a href="/aboutus">
+          <button
+            className="text-white py-2 px-4 rounded bg-orange-500 hover:bg-orange-300 shadow-md"
+            style={{
+              borderRadius: '12px',
+              boxShadow: '0 1px 4px rgba(0, 0, 0, 0.25)',
+            }}
+          >
+            Learn about us
+          </button>
+        </a> </div>
 
       </div>
     </section>

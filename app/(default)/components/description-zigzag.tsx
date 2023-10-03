@@ -9,8 +9,8 @@ export default function DescriptionZigZag() {
         <div className="py-6 md:py-20 border-t border-gray-800">
 
           {/* Section header */}
-          <div className="max-w-3xl mx-auto text-center pb-4 md:pb-6">
-            <h1 className="h2 ">Unlocking Tomorrow's Dining Experience</h1>
+          <div className="max-w-2xl mx-auto text-center pb-4 md:pb-6">
+            <h1 className="h2 ">Revolutionizing Dining: Where Technology Meets impact</h1>
           </div>
 
           {/* Items */}
@@ -27,8 +27,7 @@ export default function DescriptionZigZag() {
                 <div className="md:pr-4 lg:pr-12 xl:pr-16">
                   <p className='p text-xl mb-4 text-bluesea'>Step into the Future of Dining</p>
                   <p className="p text-xl mb-4">
-                  Embark on an extraordinary journey with Dionysas, where innovation meets state-of-the-art technology. 
-                  Get ready to transform your restaurant into a captivating hub of experiences that will leave your customers enchanted and craving for more.
+                  Dionysas leads the AI revolution in dining, propelling establishments towars heightened profitability and unparalleled efficiency. Beyond operational performance, we facilitate the transition to an impact-driven realm, where every interaction counts not just for your success, but for a more sustainable and equitable future. Join us on this transformative journey, as we redefine dining for the greater good.
                   </p>
                 </div>
               </div>
