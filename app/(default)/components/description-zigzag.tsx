@@ -27,7 +27,7 @@ export default function DescriptionZigZag() {
                 <div className="md:pr-4 lg:pr-12 xl:pr-16">
                   <p className='p text-xl mb-4 text-bluesea'>Step into the Future of Dining</p>
                   <p className="p text-xl mb-4">
-                  Dionysas leads the AI revolution in dining, propelling establishments towars heightened profitability and unparalleled efficiency. Beyond operational performance, we facilitate the transition to an impact-driven realm, where every interaction counts not just for your success, but for a more sustainable and equitable future. Join us on this transformative journey, as we redefine dining for the greater good.
+                  Dionysas leads the AI revolution in dining, propelling establishments towards heightened profitability and unparalleled efficiency. Beyond operational performance, we facilitate the transition to an impact-driven realm, where every interaction counts not just for your success, but for a more sustainable and equitable future. Join us on this transformative journey, as we redefine dining for the greater good.
                   </p>
                 </div>
               </div>

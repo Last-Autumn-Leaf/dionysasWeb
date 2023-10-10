@@ -2,7 +2,7 @@ import Image from 'next/image';
 import bgImageWhite from 'public/images/White/Rectangle 6.png';
 import bgImageBlack from 'public/images/Black/Rectangle 6.png';
 import bgImage from 'public/images/iStockBg.jpeg';
-import Logo from 'public/images/Dionysas2-05.svg';
+import Logo from 'public/images/dionysas_with_text.svg';
 import coloredBg from 'public/images/Fond stylé.svg';
 
 export default function Hero() {
@@ -42,10 +42,11 @@ export default function Hero() {
         <div className='flex justify-evenly w-1/3'>
         <a href="#newsletter">
           <button
-            className="text-white py-2 px-4 rounded bg-orange-500 hover:bg-orange-300 shadow-md"
+            className="text-white py-2 px-4 rounded bg-orange-500 hover:bg-orange-300 shadow-md m-2"
             style={{
               borderRadius: '12px',
               boxShadow: '0 1px 4px rgba(0, 0, 0, 0.25)',
+              minWidth:'100px'
             }}
           >
             Join the revolution
@@ -53,10 +54,11 @@ export default function Hero() {
         </a>
         <a href="/aboutus">
           <button
-            className="text-white py-2 px-4 rounded bg-orange-500 hover:bg-orange-300 shadow-md"
+            className="text-white py-2 px-4 rounded bg-orange-500 hover:bg-orange-300 shadow-md m-2"
             style={{
               borderRadius: '12px',
               boxShadow: '0 1px 4px rgba(0, 0, 0, 0.25)',
+              minWidth:'100px'
             }}
           >
             Learn about us
