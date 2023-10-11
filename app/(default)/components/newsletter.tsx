@@ -1,6 +1,6 @@
 
 import Image from 'next/image';
-import newsletterImage from 'public/images/newsletter.svg';
+import newsletterImage from 'public/images/newsletter.jpg';
 
 export default function Newsletter() {
 
@@ -18,6 +18,8 @@ export default function Newsletter() {
                 <Image 
                   src={newsletterImage} 
                   alt={`contact us`} 
+                  width={400}
+                  height={400}
                 />
             </div>
 

@@ -18,7 +18,7 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-  const noHeader=false;
+  const noHeader=true;
   const noBanner=false;
   return (
     <html lang="en" >

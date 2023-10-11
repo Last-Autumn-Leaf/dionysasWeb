@@ -13,14 +13,21 @@ export const metadata = {
 
 
 export default function Home() {
-  const noNewsletter=true;
+
+  const sections = [
+    <Hero />,
+    <DescriptionZigZag />,
+    <Features />,
+    <Introduction />,
+    <Newsletter />
+  ];
   return (
     <>
-      <Hero />
-      <DescriptionZigZag/>
-      <Features />
-      <Introduction/>
-      {noNewsletter&&<Newsletter />}
+    {sections.map((section, index) => (
+        <section key={index} className={index % 2 === 1 ? 'bg-slate-50' : ''}>
+          {section}
+        </section>
+      ))}
     </>
   )
 }

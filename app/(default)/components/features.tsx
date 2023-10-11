@@ -8,6 +8,17 @@ import feat4 from 'public/images/White/image_feature_4.svg';
 import feat5 from 'public/images/White/image_feature_5.svg';
 
 const Features = () => {  
+
+  const [hoveredIndex, setHoveredIndex] = useState(null);
+
+  const handleMouseEnter = (index:any) => {
+    setHoveredIndex(index);
+  };
+
+  const handleMouseLeave = () => {
+    setHoveredIndex(null);
+  };
+
   const features = [
     { feat: feat1, text: 'RestoVision',
       desc:"Designed to be the ultimate analysis and anticipation tool, RestoVision helps restaurants optimize operations while minimizing their ecological footprint." },
@@ -29,8 +40,8 @@ const Features = () => {
 
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6v">
         
-      <div className="py-6 md:py-20 border-t border-gray-800">
-          <div className="pt-12 md:pt-20  text-center">
+      <div className="py-4 md:py-20 border-t border-gray-800">
+          <div className="pt-12 md:pt-10  text-center">
             <h2 className="h2 mb-4">Our products</h2>
             
                   <p className="p text-xl  mb-4">
@@ -39,20 +50,25 @@ const Features = () => {
             <div ref={containerRef}  className="flex flex-wrap justify-center mt-4 mb-4">
               {features.map((feature, index) => {
                 return (
-                  <div key={index}  className="group relative m-2  justify-center">
+                  <div key={index}  
+                  className={`group relative m-2  ${ hoveredIndex === index ? 'hovered' : '' }`}
+                  onMouseEnter={() => handleMouseEnter(index)}
+                  onMouseLeave={handleMouseLeave}>
                     {/*p-8*/}
                     <div 
-                      className="bg-bluesea m-4 rounded-3xl max-md:w-32 max-md:h-32 w-52 h-52 "
+                      className="bg-bluesea m-4 rounded-3xl max-md:w-32 max-md:h-32 w-52 h-52 p-4 flex flex-col justify-center items-center"
                       >
-                      <div className=" mx-auto max-md:w-16 max-md:h-16 w-32 h-32">
-                        <Image 
-                          src={feature.feat} 
-                          alt={`Feature ${index + 1}`} 
-                        />
-                      </div>
-                      <h3 className="h3 max-md:text-xs text-lg text-center text-white font-bold mb-2">{feature.text}</h3>
+                      {hoveredIndex !== index && 
+                        <div className=" mx-auto max-md:w-16 max-md:h-16 w-32 h-32">
+                          <Image 
+                            src={feature.feat} 
+                            alt={`Feature ${index + 1}`} 
+                          />
+                        </div>}
+                      {hoveredIndex !== index && <h3 className="h3 max-md:text-xs text-base text-center text-white font-bold mb-2">{feature.text}</h3>}
+                      
+                      {hoveredIndex === index && <h3 className="h2 max-md:text-[0.6rem] text-base text-white font-bold">{feature.desc}</h3>}
                     </div>
-                    <span className="absolute  top-10 scale-0 transition-all rounded bg-gray-800 p-2 text-lg text-white group-hover:scale-100 z-10">✨ {feature.desc}</span>
                   </div>
                 );
               })}
