@@ -1,9 +1,6 @@
 import Image from 'next/image';
-import bgImageWhite from 'public/images/White/Rectangle 6.png';
-import bgImageBlack from 'public/images/Black/Rectangle 6.png';
-import bgImage from 'public/images/iStockBg.jpeg';
+import bgImage from 'public/images/iStockBgSlow.jpg';
 import Logo from 'public/images/dionysas_with_text.svg';
-import coloredBg from 'public/images/Fond stylé.svg';
 
 export default function Hero() {
   return (

@@ -2,9 +2,19 @@
 import Image from 'next/image'
 import bestFriendsImageWhite from "public/images/White/Family Values Best Friends.svg"
 import HandGiveImageWhite from 'public/images/White/Hands Give.svg'
-import { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 
 export default function PartnerZigzag() {
+  const [hoveredIndex, setHoveredIndex] = useState(null);
+
+  const handleMouseEnter = (index:any) => {
+    setHoveredIndex(index);
+  };
+
+  const handleMouseLeave = () => {
+    setHoveredIndex(null);
+  };
+
   const values = [
     { text: 'Honest Innovation',
       desc:"Pioneering essential and sustainable solutions" },
@@ -23,9 +33,18 @@ export default function PartnerZigzag() {
         <div className="py-12 md:py-20 ">
 
           {/* Section header */}
-          <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-            <h1 className="h2 mb-4">We are Dionysas: Your Partner for Optimized Restaurant Service.</h1>
-          </div>
+          <section className="">
+            <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
+              <h1 className="h2 mb-2">We are Dionysas: Your Partner for Optimized Restaurant Service.</h1>
+            </div>
+
+            <p className="p text-xl mb-4 text-justify">
+            At Dionysas, AI at the service of ecology and society reinvents the foodservice industry. 
+            Inspired by the Greek god Dionysus, our name embodies celebration, innovation and sustainability. 
+            We offer AI as a Service ("SAS") solutions to make restaurants of all sizes more sustainable and inclusive. 
+            Join us as we toast to the future of dining, where technology rhymes with impact.
+            </p>
+          </section>
 
           {/* Items */}
           <div className="grid gap-20">
@@ -71,13 +90,19 @@ export default function PartnerZigzag() {
             <div ref={containerRef}  className="flex flex-wrap justify-center mt-4 mb-4">
               {values.map((value, index) => {
                 return (
-                  <div key={index}  className="group relative m-2 flex justify-center">
+                  <div key={index}  
+                  className={`group relative m-2  ${ hoveredIndex === index ? 'hovered' : '' }`}
+                  onMouseEnter={() => handleMouseEnter(index)}
+                  onMouseLeave={handleMouseLeave}>
                     <div 
-                      className="bg-bluesea p-8 m-4 rounded-3xl max-md:w-52 max-md:h-32 w-72 h-32 "
+                      className="bg-bluesea p-4 m-4 rounded-3xl max-md:w-40 max-md:h-32 w-60 h-32 flex flex-col justify-center items-center "
                       >
-                      <h3 className="h3 max-md:text-xs text-lg text-center text-white font-bold mb-2">{value.text}</h3>
-                    
-                      <div className="h3 max-md:text-xs text-sm text-center text-white font-bold mb-2">{value.desc}</div>
+                      <h3 className="h3 max-md:text-xs text-lg text-center text-white font-bold mb-2">
+                        {hoveredIndex !== index ? value.text : ''}
+                      </h3>
+                      <div className="h3 max-md:text-xs text-sm text-center text-white font-bold">
+                        {hoveredIndex === index ? value.desc : ''}
+                      </div>
                     </div>
                   </div>
                 );
