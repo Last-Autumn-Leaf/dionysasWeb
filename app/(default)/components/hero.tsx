@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import bgImage from 'public/images/iStockBgSlow.jpg';
+import bgImage from 'public/images/iStockBgSlow.webp';
 import Logo from 'public/images/dionysas_with_text.svg';
 
 export default function Hero() {
